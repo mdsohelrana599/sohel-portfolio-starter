@@ -1,84 +1,61 @@
-import { FaCode, FaPaintBrush, FaWordpress, FaBullhorn } from "react-icons/fa";
+"use client";
 
-const servicesData = [
-  {
-    title: "web development",
-     icon: <FaCode />,
-    info: [
-      {
-        title: "Frontend Development",
-        description: "React, Next.js, Tailwind CSS based modern UI development",
-      },
-      {
-        title: "Backend Integration",
-        description: "API integration, authentication & database handling",
-      },
-      {
-        title: "Responsive Design",
-        description: "Mobile-friendly and cross-browser compatible websites",
-      },
-    ],
-  },
-  {
-    title: "ui/ux design",
-    icon: <FaPaintBrush></FaPaintBrush>,
-    info: [
-      {
-        title: "Figma Design",
-        description: "Modern UI/UX design using Figma",
-      },
-      {
-        title: "Wireframing",
-        description: "User flow and layout planning",
-      },
-      {
-        title: "Prototyping",
-        description: "Interactive design previews",
-      },
-    ],
-  },
-  {
-    title: "wordpress",
-     icon: <FaWordpress></FaWordpress>,
-    info: [
-      {
-        title: "Custom Themes",
-        description: "Build custom WordPress themes",
-      },
-      {
-        title: "Plugin Setup",
-        description: "Install & configure plugins",
-      },
-      {
-        title: "SEO Optimization",
-        description: "Improve site ranking and performance",
-      },
-    ],
-  },
-  {
-    title: "branding",
-    icon: <FaBullhorn></FaBullhorn>,
-    info: [
-      {
-        title: "Logo Design",
-        description: "Professional brand logo creation",
-      },
-      {
-        title: "Visual Identity",
-        description: "Color, typography & brand consistency",
-      },
-      {
-        title: "Social Media Design",
-        description: "Creative posts and banners",
-      },
-    ],
-  },
-];
+import { FaCode, FaPaintBrush, FaWordpress, FaBullhorn } from "react-icons/fa";
+import Circles from "../../components/Circles";
+import Bulb from "../../components/Bulb";
+import ServiceSlider from "../../components/ServiceSlider";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants"; // ← Make sure this exists
 
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <div className="min-h-screen bg-primary/30 py-20 lg:py-36 flex items-center relative overflow-hidden">
+      <Circles />
+
+      <div className="container mx-auto px-6 xl:px-0">
+        <div className="flex flex-col xl:flex-row gap-10 xl:gap-16">
+          {/* Left Side - Title & Description */}
+          <div className="flex flex-col xl:w-[30%] text-center xl:text-left">
+            <motion.h2
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="h2 mb-6 xl:mt-8"
+            >
+              My Services<span className="text-accent">.</span>
+            </motion.h2>
+
+            <motion.p
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="max-w-[420px] mx-auto xl:mx-0 text-white/70 leading-relaxed"
+            >
+              I offer professional digital solutions ranging from modern web
+              development to creative design and branding. Let's bring your
+              ideas to life.
+            </motion.p>
+          </div>
+
+          {/* Right Side - Service Slider */}
+          <motion.div
+            variants={fadeIn("down", 0.5)} // Changed to "left" for better visual balance
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="w-full xl:max-w-[65%]"
+          >
+            <ServiceSlider />
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Bulb Component */}
+      <Bulb />
+    </div>
+  );
 };
 
 export default Services;
-
-

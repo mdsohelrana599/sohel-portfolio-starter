@@ -5,6 +5,7 @@ import {
   RiFacebookLine,
   RiTiktokLine,
   RiLinkedinLine,
+  RiGithubLine,
 } from "react-icons/ri";
 
 const Socials = () => {
@@ -18,7 +19,8 @@ const Socials = () => {
       </Link>
 
       <Link
-        href={""}
+        href={"https://www.facebook.com/sohel700599"}
+        target="_blank"
         className=" hover:text-accent transition-all duration-300"
       >
         <RiFacebookLine></RiFacebookLine>
@@ -42,6 +44,12 @@ const Socials = () => {
         className=" hover:text-accent transition-all duration-300"
       >
         <RiLinkedinLine></RiLinkedinLine>
+      </Link>
+      <Link
+        href={""}
+        className=" hover:text-accent transition-all duration-300"
+      >
+        <RiGithubLine></RiGithubLine>
       </Link>
     </div>
   );

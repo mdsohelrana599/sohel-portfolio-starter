@@ -97,7 +97,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full  bg-primary/30 py-32 text-center xl:text-left mt-8 lg:mt-0">
+    <div className="h-full  bg-primary/30 py-32 text-center xl:text-left mt-10">
       <Circles></Circles>
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -106,12 +106,12 @@ const About = () => {
         exit="hidden"
         className=" hidden xl:flex absolute bottom-0 left-[-300px]"
       >
-        <div className=" w-[600px]  ">
+        <div className=" w-[500px]  ">
           {" "}
           <Avatar></Avatar>
         </div>
       </motion.div>
-      <div className=" container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className=" relative container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className=" flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -136,10 +136,13 @@ const About = () => {
             collaborated on digital products for and cousumer use.
           </motion.p>
 
-          <motion.div variants={fadeIn("right", 0.6)}
-        initial="hidden"
-        animate="show"
-        exit="hidden" className="  md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-5">
+          <motion.div
+            variants={fadeIn("right", 0.6)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="  md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-5"
+          >
             <div className=" flex flex-1 xl:gap-x-6">
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -179,10 +182,13 @@ const About = () => {
           </motion.div>
         </div>
 
-        <motion.div variants={fadeIn("left", 0.4)}
-        initial="hidden"
-        animate="show"
-        exit="hidden" className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+        >
           <div className=" flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 ">
             {aboutData.map((item, itemIndex) => {
               return (
