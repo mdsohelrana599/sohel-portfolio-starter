@@ -1,16 +1,17 @@
 "use client";
 
-import { FaCode, FaPaintBrush, FaWordpress, FaBullhorn } from "react-icons/fa";
 import Circles from "../../components/Circles";
 import Bulb from "../../components/Bulb";
 import ServiceSlider from "../../components/ServiceSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants"; // ← Make sure this exists
+import ParticlesContainer from "../../components/ParticlesContainer";
 
 const Services = () => {
   return (
     <div className="min-h-screen bg-primary/30 py-20 lg:py-36 flex items-center relative overflow-hidden">
       <Circles />
+      <ParticlesContainer></ParticlesContainer>
 
       <div className="container mx-auto px-6 xl:px-0">
         <div className="flex flex-col xl:flex-row gap-10 xl:gap-16">
@@ -21,7 +22,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 mb-6 xl:mt-8"
+              className="h2  xl:mt-8"
             >
               My Services<span className="text-accent">.</span>
             </motion.h2>

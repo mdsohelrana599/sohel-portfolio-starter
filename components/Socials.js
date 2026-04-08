@@ -10,10 +10,10 @@ import {
 
 const Socials = () => {
   return (
-    <div className=" flex items-center gap-x-4 text-xl">
+    <div className=" flex items-center  mr-5 gap-x-3 text-2xl">
       <Link
         href={""}
-        className=" hover:text-accent transition-all duration-300"
+        className=" hover:text-accent  transition-all duration-300"
       >
         <RiYoutubeLine></RiYoutubeLine>
       </Link>
@@ -39,12 +39,14 @@ const Socials = () => {
       >
         <RiTiktokLine></RiTiktokLine>
       </Link>
+
       <Link
         href={""}
         className=" hover:text-accent transition-all duration-300"
       >
         <RiLinkedinLine></RiLinkedinLine>
       </Link>
+
       <Link
         href={""}
         className=" hover:text-accent transition-all duration-300"

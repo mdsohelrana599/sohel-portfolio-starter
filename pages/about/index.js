@@ -20,6 +20,7 @@ import Avatar from "../../components/Avatar";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import CountUp from "react-countup";
+import ParticlesContainer from "../../components/ParticlesContainer";
 
 //  data
 const aboutData = [
@@ -97,8 +98,9 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full  bg-primary/30 py-32 text-center xl:text-left mt-10">
+    <div className="h-full  bg-primary/30 py-32 text-center xl:text-left mt-5">
       <Circles></Circles>
+      <ParticlesContainer></ParticlesContainer>
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
