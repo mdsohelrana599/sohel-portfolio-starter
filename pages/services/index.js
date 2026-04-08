@@ -34,9 +34,7 @@ const Services = () => {
               exit="hidden"
               className="max-w-[420px] mx-auto xl:mx-0 text-white/70 leading-relaxed"
             >
-              I offer professional digital solutions ranging from modern web
-              development to creative design and branding. Let's bring your
-              ideas to life.
+            I build modern, fast, and responsive websites using the latest technologies. My goal is to create user-friendly and high-performance web applications that help businesses grow online.
             </motion.p>
           </div>
 

@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import Circles from "../../components/Circles";
@@ -37,9 +34,9 @@ const Work = () => {
               exit="hidden"
               className="max-w-[420px] mx-auto xl:mx-0 text-white/70 leading-relaxed"
             >
-              I offer professional digital solutions ranging from modern web
-              development to creative design and branding. Let's bring your
-              ideas to life.
+              Here are some of my recent web projects. I focus on modern design,
+              clean code, and high performance to deliver the best user
+              experience.
             </motion.p>
           </div>
 
@@ -63,4 +60,3 @@ const Work = () => {
 };
 
 export default Work;
-

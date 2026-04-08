@@ -35,13 +35,7 @@ const aboutData = [
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
         ],
-      },
-      {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
     ],
   },
@@ -49,11 +43,11 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
+        title: "Web Development",
         stage: "2025 - 2026",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
+        title: "Web Designer",
         stage: "2025 - 2026",
       },
     ],
@@ -133,9 +127,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
-            done remote work for agencies counsulted for startupr, and
-            collaborated on digital products for and cousumer use.
+            MERN Stack Developer with hands-on experience building responsive
+            web applications using React, Node.js, Express, and MongoDB. Strong
+            foundation in frontend development with Tailwind CSS and JavaScript.
+            Passionate about learning new technologies and growing as a
+            professional web developer.
           </motion.p>
 
           <motion.div
@@ -148,7 +144,7 @@ const About = () => {
             <div className=" flex flex-1 xl:gap-x-6">
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5}></CountUp> +
+                  <CountUp start={0} end={1} duration={5}></CountUp> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
@@ -157,7 +153,7 @@ const About = () => {
 
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5}></CountUp> +
+                  <CountUp start={0} end={20} duration={5}></CountUp> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients
@@ -166,7 +162,7 @@ const About = () => {
 
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={50} duration={5}></CountUp> +
+                  <CountUp start={0} end={5} duration={5}></CountUp> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects
@@ -174,7 +170,7 @@ const About = () => {
               </div>
               <div className=" relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={5} duration={5}></CountUp> +
+                  <CountUp start={0} end={0} duration={5}></CountUp> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Winning awards

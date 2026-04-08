@@ -28,7 +28,11 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            MERN Stack Developer with hands-on experience building responsive
+            web applications using React, Node.js, Express, and MongoDB. Strong
+            foundation in frontend development with Tailwind CSS and JavaScript.
+            Passionate about learning new technologies and growing as a
+            professional web developer.
           </motion.p>
 
           <div className="flex justify-center xl:hidden relative">
