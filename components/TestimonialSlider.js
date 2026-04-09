@@ -7,28 +7,28 @@ const testimonialData = [
     name: "Sohel Rana",
     position: "Founder",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Working with this developer was an outstanding experience. The project was delivered on time with excellent quality. Highly recommended!",
   },
   {
     image: "/t-avt-1.png",
     name: "Anne Smith",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Excellent work! The website looks amazing and runs very smoothly. Communication was clear and everything was delivered on time.",
   },
-  {
+  { 
     image: "/t-avt-2.png",
     name: "Jane Doe",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "I’m really impressed with the design and performance. The developer understood my requirements perfectly.",
   },
   {
     image: "/t-avt-3.png",
     name: "Jhon Doe",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+     "Professional and reliable service. Highly recommended for anyone looking for quality web development.",
   },
 ];
 

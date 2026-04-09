@@ -2,10 +2,12 @@ import ParticlesContainer from "../../components/ParticlesContainer";
 import TestimonialSlider from "../../components/TestimonialSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import Circles from "../../components/Circles";
 
 const Testimonials = () => {
   return (
     <div>
+      <Circles></Circles>
       <ParticlesContainer></ParticlesContainer>
       <div className=" h-full bg-primary/30 py-32 text-center">
         <div className=" container mx-auto h-full flex flex-col justify-center">
@@ -19,10 +21,12 @@ const Testimonials = () => {
             What clients <span className=" text-accent">say.</span>
           </motion.h2>
 
-          <motion.div  variants={fadeIn("up", 0.4)} // Changed to "left" for better visual balance
+          <motion.div
+            variants={fadeIn("up", 0.4)} // Changed to "left" for better visual balance
             initial="hidden"
             animate="show"
-            exit="hidden">
+            exit="hidden"
+          >
             <TestimonialSlider></TestimonialSlider>
           </motion.div>
         </div>
