@@ -1,20 +1,8 @@
 // icons
 import { useState } from "react";
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 import Circles from "../../components/Circles";
 import Avatar from "../../components/Avatar";
 import { motion } from "framer-motion";
@@ -30,11 +18,11 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
+          <FaHtml5 key="html" />,
+          <FaCss3 key="css" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="next" />,
         ],
       },
     ],
@@ -92,7 +80,10 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full  bg-primary/30 py-32 text-center xl:text-left mt-5">
+    <div
+      key={index}
+      className="h-full  bg-primary/30 py-32 text-center xl:text-left mt-5"
+    >
       <Circles></Circles>
       <ParticlesContainer></ParticlesContainer>
       <motion.div
